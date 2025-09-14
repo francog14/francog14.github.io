@@ -65,6 +65,17 @@
       ul li, p{font-size:16px}
       .cols-2{grid-template-columns: 1fr}
     }
+    /* Ajuste de tamaño para capturas de commits */
+img.commit-img{
+  width:100%;        /* ocupa el ancho del contenedor */
+  max-width:500px;   /* límite para que no se gigantee */
+  height:auto;       /* mantiene proporción */
+  display:block;     /* permite centrar */
+  margin:12px auto;  /* centrado y respiro */
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.1);
+}
+
   </style>
 </head>
 <body>
@@ -231,6 +242,31 @@ git push -u origin main</pre>
           </div>
         </div>
       </section>
+
+      <section class="slide">
+<h2>5) Repositorio y Commits</h2>
+<p>Historial de commits en GitHub demuestra trabajo colaborativo y evolución del proyecto.</p>
+<div class="grid cols-2">
+<div class="card">
+<h3>Commits iniciales</h3>
+<img src="commit/commit 1 .png" alt="Commits iniciales" class="commit-img" />
+</div>
+<div class="card">
+<h3>Avances en catálogo</h3>
+<img src="commit/commit 2 .png" alt="Commits catálogo" class="commit-img" />
+</div>
+</div>
+<div class="grid cols-2">
+<div class="card">
+<h3>Orden y mejoras</h3>
+<img src="commit/commit 3.png" alt="Commits mejoras" class="commit-img" />
+</div>
+<div class="card">
+<h3>Últimos detalles</h3>
+<img src="commit/commit 4 .png" alt="Commits finales" class="commit-img" />
+</div>
+</div>
+</section>
 
       <section class="slide" data-title="Cierre">
         <h2>Conclusiones y Próximos Pasos</h2>
