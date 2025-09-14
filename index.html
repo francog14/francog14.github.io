@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Primera Tienda - Bienvenida</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="contenedor">
+    <h1>Mi Primera Tienda</h1>
+    <nav>
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="registro.html">Registrarse</a>
+      <a href="login.html">Ingresar</a>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <!-- Bienvenida / Hero -->
+    <section id="bienvenida" aria-labelledby="bienvenida-titulo" style="margin-bottom: 1.25rem;">
+      <h2 id="bienvenida-titulo">¡Bienvenido/a a tu tienda de vehículos!</h2>
+      <p style="margin: .25rem 0 0; color: var(--texto-dim, #b9b9b9); max-width: 60ch;">
+        Explora autos destacados, compara modelos y descubre ofertas. Aquí tienes 3 recomendaciones rápidas
+        según lo más visto por los usuarios. ¿Listo/a para encontrar tu próximo vehículo?
+      </p>
+      <div style="margin-top: .75rem;">
+        <a class="btn" href="catalogo.html">Ver catálogo completo</a>
+      </div>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section id="recomendaciones" aria-labelledby="reco-titulo">
+      <h2 id="reco-titulo">Recomendaciones para ti</h2>
+
+      <article class="producto">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop" alt="Sedán compacto color rojo en carretera" />
+        <h3>Sedán Compacto 1.6</h3>
+        <p>Ideal para ciudad: eficiente, cómodo y con gran relación precio/calidad.</p>
+        <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+          <a class="btn" href="catalogo.html">Ver detalles</a>
+          <button class="btn" data-demo-btn>Comparar</button>
+        </div>
+      </article>
+
+      <article class="producto">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1200&auto=format&fit=crop" alt="SUV familiar color gris en un entorno natural" />
+        <h3>SUV Familiar 2.0</h3>
+        <p>Espacio para todos: seguridad, conectividad y maletero amplio para viajes.</p>
+        <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+          <a class="btn" href="catalogo.html">Ver detalles</a>
+          <button class="btn" data-demo-btn>Comparar</button>
+        </div>
+      </article>
+
+      <article class="producto">
+        <img src="https://images.unsplash.com/photo-1517940310602-795f19f61ea9?q=80&w=1200&auto=format&fit=crop" alt="Hatchback deportivo color blanco estacionado" />
+        <h3>Hatchback Sport 1.4T</h3>
+        <p>Compacto y ágil: motor turbo, diseño juvenil y excelente rendimiento.</p>
+        <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+          <a class="btn" href="catalogo.html">Ver detalles</a>
+          <button class="btn" data-demo-btn>Comparar</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Video informativo opcional -->
+    <section aria-labelledby="video-titulo">
+      <h2 id="video-titulo">Consejos para comprar tu auto</h2>
+      <div class="video-responsivo">
+        <iframe
+          src="https://www.youtube.com/embed/xjUjo14Ck_c"
+          title="Consejos de compra segura"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2025 Mi Primera Tienda</p>
+      <p>Contacto: <a href="mailto:contacto@mitienda.test">contacto@mitienda.test</a></p>
+    </div>
+  </footer>
+</body>
+</html>
